@@ -1,0 +1,726 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Happy Birthday My Love</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+    <div class="cursor-heart"></div>
+
+  <!-- ============================================================
+       LOCK SCREEN
+  ============================================================ -->
+  <div id="lock-screen">
+    <video autoplay muted loop playsinline class="site-bg-video">
+      <source src="lockscreen.mp4" type="video/mp4">
+    </video>
+    <div class="lock-overlay"></div>
+   <div class="lock-info">
+    <!-- Birthday Countdown -->
+    <div class="birthday-timer">
+      <p class="timer-label">🎂 Birthday Countdown</p>
+      <div id="countdown">
+        <div class="time-box">
+          <span id="days">00</span>
+          <p>Days</p>
+        </div>
+        <div class="time-box">
+          <span id="hours">00</span>
+          <p>Hours</p>
+        </div>
+        <div class="time-box">
+          <span id="minutes">00</span>
+          <p>Minutes</p>
+        </div>
+        <div class="time-box">
+          <span id="seconds">00</span>
+          <p>Seconds</p>
+        </div>
+      </div>
+    </div>
+   </div>
+    <!-- PIN Entry -->
+    <div class="lock-content">
+      <div class="lock-glow-ring">
+        <div class="lock-icon">♡</div>
+      </div>
+      <h1 class="lock-title">Welcome</h1>
+      <p class="lock-subtitle">Enter the special pin ✨</p>
+
+      <div id="pin-display">
+        <span class="pin-dot" id="dot-0"></span>
+        <span class="pin-dot" id="dot-1"></span>
+        <span class="pin-dot" id="dot-2"></span>
+        <span class="pin-dot" id="dot-3"></span>
+      </div>
+
+      <p id="error-msg"></p>
+
+      <div class="pin-buttons">
+        <button onclick="addNumber('1')">1</button>
+        <button onclick="addNumber('2')">2</button>
+        <button onclick="addNumber('3')">3</button>
+        <button onclick="addNumber('4')">4</button>
+        <button onclick="addNumber('5')">5</button>
+        <button onclick="addNumber('6')">6</button>
+        <button onclick="addNumber('7')">7</button>
+        <button onclick="addNumber('8')">8</button>
+        <button onclick="addNumber('9')">9</button>
+        <button class="btn-clear" onclick="clearPin()">⌫</button>
+        <button onclick="addNumber('0')">0</button>
+        <button class="btn-enter" onclick="checkPin()">♡</button>
+      </div>
+    </div>
+  </div>
+
+
+<script src="script.js"></script>
+
+<nav>
+
+<div class="logo">BIRTHDAY PGLU</div>
+
+<ul>
+<li><a href="#story">Story</a></li>
+<li><a href="#memories">Memories</a></li>
+<li><a href="#wish">Wish</a></li>
+</ul>
+
+<a href="#" class="gift-btn">Open Gift</a>
+
+</nav>
+
+<!-------------------------------------------------- PAGE 1 ------------------------------------------------------->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge">
+TODAY IS YOUR DAY ✨
+</div>
+
+<h1>
+HAPPY
+<span>BIRTHDAY</span>
+MY Penguin
+</h1>
+
+<p class="tagline">
+𝐀 𝐥𝐢𝐭𝐭𝐥𝐞 𝐮𝐧𝐢𝐯𝐞𝐫𝐬𝐞 𝐦𝐚𝐝𝐞 𝐣𝐮𝐬𝐭 𝐟𝐨𝐫 𝐲𝐨𝐮.
+</p>
+
+<div class="buttons">
+<a href="#story" class="btn1">Our Story</a>
+<a href="#memories" class="btn2"> Memories</a>
+</div>
+
+</div>
+
+</section>
+
+<div class="heart h1">❤</div>
+<div class="heart h2">❤</div>
+<div class="heart h3">❤</div>
+
+<div class="scroll">
+SCROLL FOR MAGIC ↓
+</div>
+
+<!-------------------------------------------------- PAGE 2 ------------------------------------------------------->
+
+ <!-- SCRAPBOOK LOVE PAGE -->
+
+<section class="scrapbook-section">
+
+<div class="paper-bg"></div>
+
+<h1 class="scrap-title">
+My Moon ✨
+</h1>
+
+<div class="scrapbook-grid">
+
+<!-- CARD 1 -->
+
+<div class="scrap-card rotate-left">
+
+<img src="penguin1.jpeg">
+
+<p>
+The beginning of everything 🌸
+</p>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="scrap-card rotate-right">
+
+<img src="penguin2.jpeg">
+
+<p>
+Late Night Talks 🌙
+</p>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="scrap-note">
+
+<h2>
+MY Special Person<br>
+Written By Fate 💖
+</h2>
+
+<p>
+𝑭𝒓𝒐𝒎 𝒓𝒂𝒏𝒅𝒐𝒎 𝒎𝒐𝒎𝒆𝒏𝒕𝒔 𝒕𝒐 𝒖𝒏𝒇𝒐𝒓𝒈𝒆𝒕𝒕𝒂𝒃𝒍𝒆 𝒎𝒆𝒎𝒐𝒓𝒊𝒆𝒔 ✨
+</p>
+
+</div>
+
+<!-- CARD 4 -->
+
+<div class="scrap-card rotate-small">
+
+<img src="penguin3.jpeg">
+
+<p>
+Cute Moments 🧸
+</p>
+
+</div>
+
+<!-- CARD 5 -->
+
+<div class="scrap-card rotate-right">
+
+<img src="penguin4.jpeg">
+
+<p>
+My Favorite Person 🌌
+</p>
+
+</div>
+
+<!-- HEART -->
+
+<div class="heart-note">
+Forever ♡
+</div>
+
+<!-- CARD 6 -->
+
+<div class="scrap-card rotate-left big-card">
+
+<img src="penguin5.jpeg">
+
+<p>
+A Story I Never Want To End ✨
+</p>
+
+</div>
+
+<!-- CARD 7 -->
+
+<div class="scrap-card rotate-small">
+
+<img src="penguin6.jpeg">
+
+<p>
+Power & Passion ❤️
+</p>
+
+</div>
+
+<!-- CARD 8 -->
+
+<div class="scrap-card rotate-right">
+
+<img src="penguin7.jpeg">
+
+<p>
+Beautiful Memories 🌙
+</p>
+
+</div>
+
+<!-- CARD 9 -->
+
+<div class="scrap-card rotate-left">
+
+<img src="penguin8.jpeg">
+
+<p>
+Forever Together 💞
+</p>
+
+</div>
+
+<!-- CARD 10 -->
+
+<div class="scrap-card rotate-right wide-card">
+
+<img src="penguin9.jpeg">
+
+<p>
+Fate Brought Us Together ✨
+</p>
+
+</div>
+
+</div>
+
+<!-- DECOR -->
+
+<div class="tape tape1"></div>
+<div class="tape tape2"></div>
+<div class="tape tape3"></div>
+
+<div class="small-heart heart1">❤</div>
+<div class="small-heart heart2">❤</div>
+<div class="small-heart heart3">❤</div>
+
+</section>
+
+<!-------------------------------------------------- PAGE 3 ------------------------------------------------------->
+
+<section>
+<!-- ULTRA CINEMATIC MEMORY SECTION -->
+
+<section id="memories" class="movie-section">
+
+<div class="movie-bg-glow glow-left"></div>
+<div class="movie-bg-glow glow-right"></div>
+
+<div class="movie-wrapper">
+
+<!-- TOP -->
+
+<div class="movie-top">
+
+<div class="movie-number">
+07
+</div>
+
+<div class="movie-line"></div>
+
+<p class="movie-label">
+OUR LITTLE UNIVERSE
+</p>
+
+</div>
+
+<!-- HERO -->
+
+<div class="movie-hero">
+
+<img src="penguin10.jpeg">
+
+<div class="movie-hero-overlay">
+
+<h1>
+MY<br>
+PRINCESS
+</h1>
+
+<p>
+𝐀 𝐜𝐨𝐥𝐥𝐞𝐜𝐭𝐢𝐨𝐧 𝐨𝐟 𝐦𝐲 𝐡𝐚𝐩𝐩𝐢𝐧𝐞𝐬𝐬, 𝐦𝐞𝐦𝐨𝐫𝐢𝐞𝐬 𝐚𝐧𝐝 𝐟𝐞𝐞𝐥𝐢𝐧𝐠𝐬 𝐭𝐡𝐚𝐭 𝐬𝐨𝐦𝐞𝐡𝐨𝐰 𝐛𝐞𝐜𝐚𝐦𝐞 𝐡𝐨𝐦𝐞 ✨
+</p>
+
+</div>
+
+</div>
+
+<!-- CHARACTER AREA -->
+
+<div class="movie-character-section">
+
+<div class="character-side">
+
+<img src="penguin6.jpeg" class="active-character">
+<img src="penguin7.jpeg">
+<img src="penguin8.jpeg">
+<img src="penguin9.jpeg">
+
+</div>
+
+<div class="character-content">
+
+<h2>
+MY FAVORITE PERSON 💖
+</h2>
+
+<p>
+𝑶𝒖𝒕 𝒐𝒇 𝒂𝒍𝒍 𝒕𝒉𝒆 𝒑𝒆𝒐𝒑𝒍𝒆 𝑰’𝒗𝒆 𝒎𝒆𝒕 𝒊𝒏 𝒎𝒚 𝒍𝒊𝒇𝒆, 𝒖 𝒃𝒆𝒄𝒂𝒎𝒆 𝒎𝒚 𝒇𝒂𝒗𝒐𝒓𝒊𝒕𝒆 𝒔𝒐 𝒆𝒇𝒇𝒐𝒓𝒕𝒍𝒆𝒔𝒔𝒍𝒚 𝑵𝒐𝒕 𝒃𝒆𝒄𝒂𝒖𝒔𝒆 𝒖’𝒓𝒆 𝒑𝒆𝒓𝒇𝒆𝒄𝒕, 𝒃𝒖𝒕 𝒃𝒆𝒊𝒏𝒈 𝒂𝒓𝒐𝒖𝒏𝒅 𝒖 𝒇𝒆𝒆𝒍𝒔 𝒅𝒊𝒇𝒇𝒆𝒓𝒆𝒏𝒕 𝒇𝒓𝒐𝒎 𝒆𝒗𝒆𝒓𝒚𝒐𝒏𝒆 𝒆𝒍𝒔𝒆 𝒖𝒓 𝒑𝒓𝒆𝒔𝒆𝒏𝒄𝒆 𝒃𝒓𝒊𝒏𝒈𝒔 𝒂 𝒌𝒊𝒏𝒅 𝒐𝒇 𝒄𝒐𝒎𝒇𝒐𝒓𝒕 𝑰 𝒄𝒂𝒏’𝒕 𝒆𝒙𝒑𝒍𝒂𝒊𝒏.... 𝒖𝒓 𝒉𝒖𝒎𝒐𝒓, 𝒖𝒓 𝒔𝒎𝒊𝒍𝒆, 𝒕𝒉𝒆 𝒘𝒂𝒚 𝒖 𝒕𝒂𝒍𝒌, 𝒆𝒗𝒆𝒏 𝒖𝒓 𝒍𝒊𝒕𝒕𝒍𝒆 𝒉𝒂𝒃𝒊𝒕𝒔 𝒔𝒐𝒎𝒆𝒉𝒐𝒘 𝒃𝒆𝒄𝒂𝒎𝒆 𝒎𝒚 𝒇𝒂𝒗𝒐𝒓𝒊𝒕𝒆 𝒕𝒉𝒊𝒏𝒈𝒔 𝒘𝒊𝒕𝒉𝒐𝒖𝒕 𝒎𝒆 𝒓𝒆𝒂𝒍𝒊𝒛𝒊𝒏𝒈 𝒊𝒕.  𝑼’𝒓𝒆 𝒕𝒉𝒆 𝒑𝒆𝒓𝒔𝒐𝒏 𝑰 𝒘𝒂𝒏𝒕 𝒕𝒐 𝒕𝒆𝒍𝒍 𝒆𝒗𝒆𝒓𝒚𝒕𝒉𝒊𝒏𝒈 𝒕𝒐 𝒇𝒊𝒓𝒔𝒕, 𝒘𝒉𝒐𝒔𝒆 𝒎𝒆𝒔𝒔𝒂𝒈𝒆 𝒄𝒂𝒏 𝒊𝒏𝒔𝒕𝒂𝒏𝒕𝒍𝒚 𝒄𝒉𝒂𝒏𝒈𝒆 𝒎𝒚 𝒎𝒐𝒐𝒅, 𝒘𝒉𝒐 𝒕𝒖𝒓𝒏𝒆𝒅 𝒐𝒓𝒅𝒊𝒏𝒂𝒓𝒚 𝒅𝒂𝒚𝒔 𝒊𝒏𝒕𝒐 𝒎𝒆𝒎𝒐𝒓𝒊𝒆𝒔 𝑰’𝒍𝒍 𝒏𝒆𝒗𝒆𝒓 𝒇𝒐𝒓𝒈𝒆𝒕 💫  𝒏𝒅 𝒉𝒐𝒏𝒆𝒔𝒕𝒍𝒚, 𝒏𝒐 𝒎𝒂𝒕𝒕𝒆𝒓 𝒉𝒐𝒘 𝒎𝒂𝒏𝒚 𝒑𝒆𝒐𝒑𝒍𝒆 𝒄𝒐𝒎𝒆 𝒏𝒅 𝒈𝒐 𝒊𝒏 𝒎𝒚 𝒍𝒊𝒇𝒆, 𝑰 𝒅𝒐𝒏’𝒕 𝒕𝒉𝒊𝒏𝒌 𝒂𝒏𝒚𝒐𝒏𝒆 𝒄𝒐𝒖𝒍𝒅 𝒆𝒗𝒆𝒓 𝒓𝒆𝒑𝒍𝒂𝒄𝒆 𝒕𝒉𝒆 𝒑𝒍𝒂𝒄𝒆 𝒖 𝒉𝒐𝒍𝒅 𝒊𝒏 𝒎𝒚 𝒉𝒆𝒂𝒓𝒕. 🤍
+</p>
+
+</div>
+
+<div class="character-main-image">
+
+<img src="penguin5.jpeg">
+
+</div>
+
+</div>
+
+<!-- MEMORY TIMELINE -->
+
+<div class="memory-guide">
+
+<div class="memory-left">
+
+<h2>OUR MEMORIES 🐧</h2>
+
+<p>
+𝑰 𝒅𝒐𝒏’𝒕 𝒕𝒉𝒊𝒏𝒌, 𝒖 𝒆𝒗𝒆𝒏 𝒓𝒆𝒂𝒍𝒊𝒛𝒆 𝒉𝒐𝒘 𝒎𝒖𝒄𝒉 𝒖 𝒎𝒆𝒂𝒏 𝒕𝒐 𝒎𝒆 🌙  𝑺𝒐𝒎𝒆𝒉𝒐𝒘, 𝒖 𝒃𝒆𝒄𝒂𝒎𝒆 𝒂 𝒑𝒂𝒓𝒕 𝒐𝒇 𝒎𝒚 𝒆𝒗𝒆𝒓𝒚𝒅𝒂𝒚 𝒍𝒊𝒇𝒆 𝒔𝒐 𝒏𝒂𝒕𝒖𝒓𝒂𝒍𝒍𝒚 𝒕𝒉𝒂𝒕 𝒏𝒐𝒘 𝒆𝒗𝒆𝒏 𝒕𝒉𝒆 𝒔𝒎𝒂𝒍𝒍𝒆𝒔𝒕 𝒕𝒉𝒊𝒏𝒈𝒔 𝒓𝒆𝒎𝒊𝒏𝒅 𝒎𝒆 𝒐𝒇 𝒖.  𝑼𝒓 𝒎𝒆𝒔𝒔𝒂𝒈𝒆𝒔, 𝒖𝒓 𝒉𝒖𝒎𝒐𝒓, 𝒖𝒓 𝒑𝒓𝒆𝒔𝒆𝒏𝒄𝒆, 𝒆𝒗𝒆𝒏 𝒖𝒓 𝒍𝒊𝒕𝒕𝒍𝒆 𝒎𝒐𝒐𝒅𝒔 𝒔𝒐𝒎𝒆𝒉𝒐𝒘 𝒃𝒆𝒄𝒂𝒎𝒆 𝒊𝒎𝒑𝒐𝒓𝒕𝒂𝒏𝒕 𝒕𝒐 𝒎𝒆 𝒘𝒊𝒕𝒉𝒐𝒖𝒕 𝒎𝒆 𝒏𝒐𝒕𝒊𝒄𝒊𝒏𝒈.  𝑻𝒉𝒆𝒓𝒆 𝒘𝒆𝒓𝒆 𝒎𝒐𝒎𝒆𝒏𝒕𝒔 𝒘𝒉𝒆𝒏 𝒘𝒆 𝒔𝒕𝒐𝒑𝒑𝒆𝒅 𝒕𝒂𝒍𝒌𝒊𝒏𝒈, 𝒎𝒐𝒎𝒆𝒏𝒕𝒔 𝒘𝒉𝒆𝒏 𝒅𝒊𝒔𝒕𝒂𝒏𝒄𝒆 𝒄𝒂𝒎𝒆 𝒃𝒆𝒕𝒘𝒆𝒆𝒏 𝒖𝒔, 𝒃𝒖𝒕 𝒏𝒐 𝒎𝒂𝒕𝒕𝒆𝒓 𝒘𝒉𝒂𝒕 𝒉𝒂𝒑𝒑𝒆𝒏𝒆𝒅, 𝒎𝒚 𝒉𝒆𝒂𝒓𝒕 𝒂𝒍𝒘𝒂𝒚𝒔 𝒇𝒐𝒖𝒏𝒅 𝒊𝒕𝒔 𝒘𝒂𝒚 𝒃𝒂𝒄𝒌 𝒕𝒐 𝒖 𝑻𝒉𝒂𝒕’𝒔 𝒘𝒉𝒆𝒏 𝑰 𝒓𝒆𝒂𝒍𝒊𝒛𝒆𝒅 𝒕𝒉𝒊𝒔 𝒄𝒐𝒏𝒏𝒆𝒄𝒕𝒊𝒐𝒏 𝒘𝒂𝒔 𝒏𝒆𝒗𝒆𝒓 𝒐𝒓𝒅𝒊𝒏𝒂𝒓𝒚 𝒇𝒐𝒓 𝒎𝒆. 💫  𝑼’𝒗𝒆 𝒎𝒂𝒅𝒆 𝒎𝒆 𝒇𝒆𝒆𝒍 𝒉𝒂𝒑𝒑𝒊𝒏𝒆𝒔𝒔 𝒊𝒏 𝒕𝒉𝒆 𝒔𝒊𝒎𝒑𝒍𝒆𝒔𝒕 𝒘𝒂𝒚𝒔 𝒑𝒐𝒔𝒔𝒊𝒃𝒍𝒆, 𝑶𝒏𝒆 𝒎𝒆𝒔𝒔𝒂𝒈𝒆 𝒇𝒓𝒐𝒎 𝒖 𝒄𝒂𝒏 𝒇𝒊𝒙 𝒂 𝒃𝒂𝒅 𝒅𝒂𝒚,  𝒏𝒅 𝒐𝒏𝒆 𝒎𝒐𝒎𝒆𝒏𝒕 𝒐𝒇 𝒅𝒊𝒔𝒕𝒂𝒏𝒄𝒆 𝒇𝒓𝒐𝒎 𝒖 𝒄𝒂𝒏 𝒎𝒂𝒌𝒆 𝒆𝒗𝒆𝒓𝒚𝒕𝒉𝒊𝒏𝒈 𝒇𝒆𝒆𝒍 𝒊𝒏𝒄𝒐𝒎𝒑𝒍𝒆𝒕𝒆.  𝑰 𝒄𝒂𝒓𝒆 𝒂𝒃𝒐𝒖𝒕 𝒖 𝒎𝒐𝒓𝒆 𝒕𝒉𝒂𝒏 𝑰 𝒄𝒂𝒏 𝒆𝒗𝒆𝒓 𝒆𝒙𝒑𝒍𝒂𝒊𝒏 𝒊𝒏 𝒘𝒐𝒓𝒅𝒔 𝒏𝒐𝒕 𝒋𝒖𝒔𝒕 𝒃𝒆𝒄𝒂𝒖𝒔𝒆 𝑰 𝒍𝒐𝒗𝒆 𝒕𝒂𝒍𝒌𝒊𝒏𝒈 𝒕𝒐 𝒖, 𝒃𝒖𝒕 𝒔𝒐𝒎𝒆𝒘𝒉𝒆𝒓𝒆 𝒂𝒍𝒐𝒏𝒈 𝒕𝒉𝒊𝒔 𝒋𝒐𝒖𝒓𝒏𝒆𝒚, 𝒖 𝒃𝒆𝒄𝒂𝒎𝒆 𝒔𝒐𝒎𝒆𝒐𝒏𝒆 𝒎𝒚 𝒉𝒆𝒂𝒓𝒕 𝒇𝒆𝒆𝒍𝒔 𝒑𝒆𝒂𝒄𝒆𝒇𝒖𝒍 𝒘𝒊𝒕𝒉 🤍  𝒏𝒅 𝒊𝒇 𝒕𝒉𝒆𝒓𝒆’𝒔 𝒐𝒏𝒆 𝒕𝒉𝒊𝒏𝒈 𝑰’𝒍𝒍 𝒂𝒍𝒘𝒂𝒚𝒔 𝒃𝒆 𝒈𝒓𝒂𝒕𝒆𝒇𝒖𝒍 𝒇𝒐𝒓, 𝒊𝒕’𝒔 𝒕𝒉𝒂𝒕 𝒓𝒂𝒏𝒅𝒐𝒎 𝒅𝒂𝒚 𝒅𝒆𝒔𝒕𝒊𝒏𝒚 𝒅𝒆𝒄𝒊𝒅𝒆𝒅 𝒐𝒖𝒓 𝒑𝒂𝒕𝒉𝒔 𝒔𝒉𝒐𝒖𝒍𝒅 𝒄𝒓𝒐𝒔𝒔.
+</p>
+
+</div>
+
+<div class="memory-right">
+
+<div class="memory-card">
+<img src="penguin6.jpeg">
+<span>FIRST DAYS</span>
+</div>
+
+<div class="memory-card">
+<img src="penguin7.jpeg">
+<span>LATE NIGHT TALKS</span>
+</div>
+
+<div class="memory-card">
+<img src="penguin8.jpeg">
+<span>RANDOM MOMENTS</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- BIG GALLERY -->
+
+<div class="cinema-gallery">
+
+<div class="gallery-big">
+<img src="penguin1.jpeg">
+
+<div class="gallery-text">
+<h2>Forever ✨</h2>
+</div>
+
+</div>
+
+<div class="gallery-column">
+
+<img src="penguin2.jpeg">
+<img src="penguin4.jpeg">
+
+</div>
+
+<div class="gallery-column">
+
+<img src="penguin6.jpeg">
+<img src="penguin7.jpeg">
+
+</div>
+
+</div>
+
+<!-- FINAL WIDE -->
+
+<div class="ending-banner">
+
+<img src="penguin9.jpeg">
+
+<div class="ending-overlay">
+
+<h2>
+Some memories fade with time...
+ours only become more beautiful 💫
+</h2>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+ <!-- ============================================================
+       TIMELINE — PAGE 4
+  ============================================================ -->
+  <section id="wish" class="timeline-section">
+    <video autoplay muted loop playsinline class="timeline-video">
+      <source src="spiddy.mp4" type="video/mp4">
+    </video>
+    <div class="timeline-overlay"></div>
+
+    <h2 class="timeline-title">Our Beautiful Journey ✨</h2>
+
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>Our Destiny 🌸</h3>
+          <p>I never imagined that going to that dandiya night would lead me to the person who would one day rule my heart and become the most beautiful part of my life. It still feels unreal how one random night slowly turned into my favorite story.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>First Time I Saw U 🌙</h3>
+          <p>I still remember that day I was at the wedding and I was completely bored. Suddenly Rini added me to a random GC. I opened the group just to pass time and started checking the members… and then I saw ur profile. Funny how one random notification slowly became the beginning of my favorite story.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>The First Talk ✨</h3>
+          <p>After that, our daily snapchat talks slowly became a habit and ur humor made me realize how someone could be so effortlessly interesting. Every conversation with u felt different and without even noticing I started looking forward to talking to u every single day.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>Ups &amp; Downs 🌌</h3>
+          <p>One day, out of nowhere u said that maybe we shouldn't talk anymore… and then u just disappeared. But somehow, no matter how many times distance came between us, we always found our way back. It felt like some invisible thread connecting us, pulling us closer every time we drifted apart.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>Birthday ✨</h3>
+          <p>On 6th January, u decided that maybe we should stop talking. After that, I felt like I was just existing without a soul. I didn't even want to celebrate my birthday anymore. But then ur message came and somehow, in the middle of all that sadness, u made my birthday feel special again 💫</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>The Reunion Forever 💖</h3>
+          <p>On 2nd April, I realized I just couldn't stay without talking to u anymore. For 4 whole days I searched for ur Snapchat id. After hours of searching I finally found u. I was so happy… but along with that happiness, there was also fear. Would u accept? And u did!!! 💫</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-------------------------------------------------- PAGE 5 ------------------------------------------------------->
+
+
+<!-- SOFT AESTHETIC MEMORY PAGE -->
+
+<section class="soft-section">
+
+<!-- FLOATING DECOR -->
+
+<img src="leaf.png" class="float leaf1">
+<img src="leaf.png" class="float leaf2">
+
+<img src="flower.png" class="float flower1">
+<img src="flower.png" class="float flower2">
+
+<div class="ribbon"></div>
+
+<!-- MAIN CARD -->
+
+<div class="memory-window">
+
+<!-- TOP -->
+
+<div class="window-top">
+
+<h2>b♡!</h2>
+
+<div class="window-icons">
+
+<span>☰</span>
+<span>⬚</span>
+
+</div>
+
+</div>
+
+<!-- MENU -->
+
+<div class="window-menu">
+
+<span>KUSTOM</span>
+<span>ART</span>
+<span class="active-tab">FILM</span>
+<span>STUDIO</span>
+
+</div>
+
+<!-- GRID -->
+
+<div class="memory-grid">
+
+<div class="memory-box">
+<img src="penguin6.jpeg">
+</div>
+
+<div class="memory-box">
+<img src="penguin7.jpeg">
+</div>
+
+<div class="memory-box">
+<img src="penguin8.jpeg">
+</div>
+
+<div class="memory-box">
+<img src="penguin9.jpeg">
+</div>
+
+</div>
+
+<!-- TITLE -->
+
+<div class="memory-title">
+Our Memories ✨
+</div>
+
+<!-- BOTTOM -->
+
+<div class="window-bottom">
+
+<button>＋ My</button>
+
+<button>Motuuuu</button>
+
+</div>
+
+</div>
+
+<!-- SIDE CARD -->
+
+<div class="note-card">
+
+<h3>notifications</h3>
+
+<div class="note pink"></div>
+<div class="note green"></div>
+<div class="note olive"></div>
+
+</div>
+
+<!-- STRAWBERRY -->
+
+<div class="strawberry-bowl">
+
+<img src="strawberry.png">
+
+</div>
+
+<!-- TEXT -->
+
+<p class="top-text">
+loving you<br>
+is forever
+</p>
+
+<p class="bottom-text">
+even though<br>
+we're in ourselves path.
+</p>
+
+</section>
+<!-------------------------------------------------- PAGE 6 ------------------------------------------------------->
+
+<section id="story" class="story-section">
+    <video autoplay muted loop playsinline class="story-video">
+
+<source src="love.mp4" type="video/mp4">
+
+</video>
+
+<div class="story-overlay"></div>
+
+<div class="story-container">
+
+<div class="story-image">
+<img src="penguin4.jpeg">
+<div class="photo-tag">OUR STORY</div>
+</div>
+
+<div class="story-text">
+
+<p class="small-title">HOW IT BEGAN</p>
+
+<h2>
+You turned ordinary days into
+<span>magic</span>
+</h2>
+
+<p class="elegant">
+𝑼 𝒂𝒓𝒆 𝒔𝒐 𝒔𝒑𝒆𝒄𝒊𝒂𝒍 𝒕𝒐 𝒎𝒆 𝒕𝒉𝒂𝒕 𝒘𝒐𝒓𝒅𝒔 𝒇𝒆𝒆𝒍 𝒕𝒐𝒐 𝒔𝒎𝒂𝒍𝒍 𝒕𝒐 𝒉𝒐𝒍𝒅 𝒘𝒉𝒂𝒕 𝑰 𝒇𝒆𝒆𝒍 𝒇𝒐𝒓 𝒖 𝒏𝒅 𝒊𝒇 𝑰 𝒄𝒐𝒖𝒍𝒅 𝒔𝒑𝒆𝒏𝒅 𝒂 𝒍𝒊𝒇𝒆𝒕𝒊𝒎𝒆 𝒃𝒆𝒔𝒊𝒅𝒆 𝒖, 𝒊𝒕 𝒘𝒐𝒖𝒍𝒅 𝒔𝒕𝒊𝒍𝒍 𝒇𝒆𝒆𝒍 𝒕𝒐𝒐 𝒔𝒉𝒐𝒓𝒕, 𝒃𝒆𝒄𝒂𝒖𝒔𝒆 𝒕𝒊𝒎𝒆 𝒘𝒊𝒕𝒉 𝒖 𝒏𝒆𝒗𝒆𝒓 𝒇𝒆𝒆𝒍𝒔 𝒆𝒏𝒐𝒖𝒈𝒉 𝑾𝒆 𝒉𝒂𝒅 𝒔𝒕𝒐𝒑𝒑𝒆𝒅 𝒕𝒂𝒍𝒌𝒊𝒏𝒈 𝒂 𝒉𝒖𝒏𝒅𝒓𝒆𝒅 𝒕𝒊𝒎𝒆𝒔, 𝒚𝒆𝒕 𝒔𝒐𝒎𝒆𝒉𝒐𝒘 𝒐𝒖𝒓 𝒉𝒆𝒂𝒓𝒕𝒔 𝒂𝒍𝒘𝒂𝒚𝒔 𝒇𝒐𝒖𝒏𝒅 𝒕𝒉𝒆𝒊𝒓 𝒘𝒂𝒚 𝒃𝒂𝒄𝒌 𝒕𝒐 𝒆𝒂𝒄𝒉 𝒐𝒕𝒉𝒆𝒓 𝒐𝒖𝒓 𝒄𝒐𝒏𝒏𝒆𝒄𝒕𝒊𝒐𝒏 𝒏𝒆𝒗𝒆𝒓 𝒃𝒓𝒆𝒂𝒌𝒔, 𝒃𝒆𝒄𝒂𝒖𝒔𝒆 𝒊𝒕 𝒘𝒂𝒔 𝒂𝒍𝒘𝒂𝒚𝒔 𝒎𝒆𝒂𝒏𝒕 𝒕𝒐 𝒃𝒆 𝒕𝒐𝒈𝒆𝒕𝒉𝒆𝒓 𝑰 𝒉𝒂𝒅 𝒂𝒍𝒎𝒐𝒔𝒕 𝒔𝒕𝒐𝒑𝒑𝒆𝒅 𝒃𝒆𝒍𝒊𝒆𝒗𝒊𝒏𝒈 𝒊𝒏 𝒃𝒆𝒂𝒖𝒕𝒊𝒇𝒖𝒍 𝒄𝒐𝒏𝒏𝒆𝒄𝒕𝒊𝒐𝒏𝒔 𝒉𝒐𝒑𝒆 𝒄𝒂𝒎𝒆 𝒃𝒂𝒄𝒌 𝒕𝒐 𝒎𝒆 𝒄𝒂𝒓𝒓𝒚𝒊𝒏𝒈 𝒖𝒓 𝒏𝒂𝒎𝒆.
+</p>
+
+<div class="stats">
+
+<div class="box">
+<h3>∞</h3>
+<p>Laughs</p>
+</div>
+
+<div class="box">
+<h3>∞</h3>
+<p>Memories</p>
+</div>
+
+<div class="box">
+<h3>1</h3>
+<p>Favorite Person</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="ending-section">
+    <video autoplay muted loop playsinline class="ending-video">
+
+<source src="walking.mp4" type="video/mp4">
+
+</video>
+
+<div class="ending-overlay-dark"></div>
+
+<div class="stars"></div>
+
+<div class="ending-content">
+
+<h1>
+The End?
+</h1>
+
+<h2>
+No<br>
+Just The Beginning ♡
+</h2>
+
+<p>
+𝐸𝑣𝑒𝑟𝑦 𝑚𝑒𝑚𝑜𝑟𝑦 𝑤𝑖𝑡ℎ 𝑢 𝑏𝑒𝑐𝑎𝑚𝑒 𝑎 𝑝𝑎𝑟𝑡 𝑜𝑓 𝑚𝑦 𝑓𝑎𝑣𝑜𝑟𝑖𝑡𝑒 𝑢𝑛𝑖𝑣𝑒𝑟𝑠𝑒 ✨
+</p>
+
+</div>
+
+</section>
+
+
