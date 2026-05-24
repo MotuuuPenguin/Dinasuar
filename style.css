@@ -177,6 +177,73 @@ letter-spacing:4px;
 font-size:12px;
 color:#aaa;
 }
+/* GIFT POPUP */
+
+#gift-popup{
+position:fixed;
+inset:0;
+display:none;
+justify-content:center;
+align-items:center;
+background:rgba(0,0,0,.8);
+backdrop-filter:blur(8px);
+z-index:9999;
+animation:fadeIn .5s ease;
+}
+
+.gift-box{
+width:500px;
+max-width:90%;
+padding:35px;
+border-radius:25px;
+
+background: rgba(255,45,120,.5);
+
+text-align:center;
+
+border:2px solid #ff4d88;
+
+box-shadow:
+0 0 35px rgba(255,77,136,.5);
+
+position:relative;
+
+animation:popup .5s ease;
+}
+
+.gift-box h2{
+font-family:'Bangers';
+font-size:45px;
+color:#ff4d88;
+margin-bottom:20px;
+text-shadow: rgba(0,0,0,.8) ;
+}
+
+.gift-box p{
+font-size:18px;
+line-height:1.8;
+color:#ddd;
+}
+
+#close-gift{
+position:absolute;
+top:15px;
+right:20px;
+font-size:28px;
+cursor:pointer;
+color:white;
+}
+
+@keyframes popup{
+from{
+opacity:0;
+transform:scale(.7);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
 
 /* -------------------------------------------------------PAGE 2 PANEL---------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Poppins:wght@300;500&display=swap');
@@ -648,8 +715,7 @@ text-shadow:6px 6px 0 #000;
 .character-content p{
 font-size:20px;
 line-height:1.9;
-color:rgb(243, 109, 7);
-text-shadow:0px 1px 0 wheat;
+color:white;
 position:absolute;
 padding-left: 15px;
 
@@ -691,8 +757,7 @@ text-shadow:6px 6px 0 #000;
 .memory-left p{
 font-size:20px;
 line-height:2;
-color:rgb(243, 109, 7);
-text-shadow:0px 1px 0 wheat;
+color:white;
 position:absolute;
 
 
@@ -1008,7 +1073,7 @@ position:relative;
 
 min-height:100vh;
 
-background:#f7f4f3;
+background:#000000;
 
 overflow:hidden;
 
@@ -1024,20 +1089,25 @@ font-family:'Poppins',sans-serif;
 /* WINDOW */
 
 .memory-window{
-position:relative;
 
 width:750px;
 
-background:#fff;
-
-border-radius:30px;
+background:#1E1E1E;
 
 padding:35px;
+border-radius:30px;
 
 box-shadow:
 0 10px 40px rgba(0,0,0,.08);
 
+position:relative;
+
 z-index:2;
+
+/* move whole card right */
+
+margin-left:180px;
+
 }
 
 /* TOP */
@@ -1071,7 +1141,6 @@ display:flex;
 gap:35px;
 
 margin-bottom:40px;
-
 font-size:18px;
 font-weight:500;
 
@@ -1159,20 +1228,26 @@ color:#4b3f4e;
 /* SIDE NOTE */
 
 .note-card{
+
 position:absolute;
 
-right:60px;
-top:260px;
+/* move to far left */
 
-background:#fff;
+left:180px;
 
-padding:25px;
+top:450px;
 
-border-radius:25px;
+padding:20px;
 
-box-shadow:0 10px 30px rgba(0,0,0,.08);
+background:white;
+
+border-radius:20px;
+
+box-shadow:
+0 5px 20px rgba(0,0,0,.08);
 
 z-index:3;
+
 }
 
 .note-card h3{
@@ -1340,6 +1415,76 @@ flex-direction:column;
 
 }
 
+/* TAB STYLE */
+
+/* WORKING TABS */
+
+.window-menu{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:15px;
+
+margin-bottom:35px;
+
+position:relative;
+
+z-index:999;
+}
+
+
+.tab{
+
+border:none;
+
+outline:none;
+
+background:rgba(0,0,0,.05);
+
+padding:12px 20px;
+
+border-radius:30px;
+
+cursor:pointer;
+
+font-size:15px;
+
+font-weight:600;
+
+color:#888;
+
+transition:.4s;
+
+pointer-events:auto;
+}
+
+
+.tab:hover{
+
+transform:translateY(-2px);
+
+color:#fff;
+
+background:#ffbdd8;
+}
+
+
+.active-tab{
+
+background:#ff4d88;
+
+color:white;
+
+box-shadow:
+0 0 20px rgba(255,77,136,.5);
+
+transform:scale(1.05);
+
+}
 /* -------------------------------------------------------PAGE 6 PANEL---------------------------------------------------------- */
 
 .story-section{
@@ -1648,7 +1793,7 @@ font-size:20px;
   z-index: -1;
 }
 
-/* Countdown — top of lock screen */
+/*------------------------------------------------ Countdown — top of lock screen --------------------------------------------------*/
 .birthday-timer {
   position: absolute;
   top: 2rem;
@@ -1910,39 +2055,96 @@ flex-wrap:wrap;
 }
 /* -------------------------------------------------------Cursor---------------------------------------------------------- */
 
-.cursor-heart{
+/* CUSTOM CURSOR */
+
+body{
+cursor:none;
+}
+
+/* Main cursor */
+
+#cursor{
+width:12px;
+height:12px;
+
+background:#ff4d88;
+
+border-radius:90%;
 
 position:fixed;
 
-left:0;
-top:0;
-
-width:25px;
-height:25px;
-
 pointer-events:none;
 
-z-index:9999999999;
+z-index:99999;
 
 transform:translate(-50%,-50%);
 
-display:flex;
-justify-content:center;
-align-items:center;
-
-font-size:35px;
+box-shadow:
+0 0 15px #ff4d88,
+0 0 30px #ff4d88;
 }
 
-.cursor-heart::before{
+/* Chasing ring */
 
-content:"❤";
+#cursorFollower{
 
-color:#ff4d88;
+width:45px;
+height:45px;
 
-text-shadow:
-0 0 10px #ff4d88,
-0 0 20px #ff4d88,
-0 0 40px #ff4d88;
+border:2px solid rgba(255,77,136,.8);
+
+border-radius:50%;
+
+position:fixed;
+
+pointer-events:none;
+
+z-index:99998;
+
+transform:translate(-50%,-50%);
+
+backdrop-filter:blur(3px);
+
+transition:
+width .3s,
+height .3s;
+}
+
+/* Floating hearts */
+
+.heart-trace{
+
+position:fixed;
+
+font-size:14px;
+
+pointer-events:none;
+
+z-index:99997;
+
+animation:heartFloat .8s linear forwards;
+}
+
+@keyframes heartFloat{
+
+0%{
+
+opacity:1;
+transform:
+translateY(0)
+scale(.5);
+
+}
+
+100%{
+
+opacity:0;
+
+transform:
+translateY(-35px)
+scale(1.4);
+
+}
 
 }
 
