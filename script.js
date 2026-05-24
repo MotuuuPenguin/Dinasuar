@@ -144,20 +144,96 @@ setInterval(updateCountdown, 1000);
    CUSTOM CURSOR
 ================================================================ */
 
-const cursor = document.querySelector(".cursor-heart");
+const cursor =
+document.getElementById("cursor");
 
-document.addEventListener("mousemove", (e) => {
-  cursor.style.left = e.clientX + "px";
-  cursor.style.top  = e.clientY + "px";
-});
+const follower =
+document.getElementById("cursorFollower");
 
-document.addEventListener("mousedown", () => {
-  cursor.style.transform = "translate(-50%, -50%) scale(0.75)";
-});
+let mouseX=0;
+let mouseY=0;
 
-document.addEventListener("mouseup", () => {
-  cursor.style.transform = "translate(-50%, -50%) scale(1)";
-});
+let followX=0;
+let followY=0;
+
+
+/* mouse movement */
+
+document.addEventListener(
+"mousemove",
+(e)=>{
+
+mouseX=e.clientX;
+mouseY=e.clientY;
+
+/* create hearts */
+
+const heart=
+document.createElement("div");
+
+heart.innerHTML="❤";
+
+heart.classList.add(
+"heart-trace"
+);
+
+heart.style.left=
+mouseX+"px";
+
+heart.style.top=
+mouseY+"px";
+
+heart.style.color=
+`hsl(${Math.random()*40+330},
+100%,
+70%)`;
+
+document.body.appendChild(
+heart
+);
+
+setTimeout(()=>{
+
+heart.remove();
+
+},800);
+
+}
+);
+
+
+/* follower animation */
+
+function animate(){
+
+cursor.style.left=
+mouseX+"px";
+
+cursor.style.top=
+mouseY+"px";
+
+
+followX +=
+(mouseX-followX)*0.12;
+
+followY +=
+(mouseY-followY)*0.12;
+
+
+follower.style.left=
+followX+"px";
+
+follower.style.top=
+followY+"px";
+
+
+requestAnimationFrame(
+animate
+);
+
+}
+
+animate();
 
 /* ================================================================
    PARTICLE CANVAS — floating hearts
@@ -274,4 +350,101 @@ window.addEventListener("scroll", () => {
     nav.style.padding = "1.2rem 4.5rem";
     nav.style.background = "rgba(6,3,9,0.6)";
   }
+});
+
+/* ================= GIFT POPUP ================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+const giftBtn = document.querySelector(".gift-btn");
+const giftPopup = document.getElementById("gift-popup");
+const closeGift = document.getElementById("close-gift");
+
+if(giftBtn){
+
+giftBtn.addEventListener("click", function(e){
+e.preventDefault();
+giftPopup.style.display="flex";
+});
+
+}
+
+if(closeGift){
+
+closeGift.addEventListener("click", function(){
+giftPopup.style.display="none";
+});
+
+}
+
+giftPopup.addEventListener("click", function(e){
+
+if(e.target===giftPopup){
+giftPopup.style.display="none";
+}
+
+});
+
+});
+
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+const imageData={
+
+kustom:[
+"penguin6.jpeg",
+"penguin7.jpeg",
+"penguin8.jpeg",
+"penguin9.jpeg"
+],
+
+art:[
+"penguin1.jpeg",
+"penguin2.jpeg",
+"penguin3.jpeg",
+"penguin4.jpeg"
+],
+
+film:[
+"penguin10.jpeg",
+"penguin5.jpeg",
+"penguin2.jpeg",
+"penguin8.jpeg"
+],
+
+studio:[
+"penguin3.jpeg",
+"penguin9.jpeg",
+"penguin5.jpeg",
+"penguin1.jpeg"
+]
+
+};
+
+const tabs=document.querySelectorAll(".tab");
+
+tabs.forEach(tab=>{
+
+tab.addEventListener("click",()=>{
+
+tabs.forEach(btn=>{
+
+btn.classList.remove("active-tab");
+
+});
+
+tab.classList.add("active-tab");
+
+const selected=tab.dataset.tab;
+
+document.getElementById("img1").src=imageData[selected][0];
+document.getElementById("img2").src=imageData[selected][1];
+document.getElementById("img3").src=imageData[selected][2];
+document.getElementById("img4").src=imageData[selected][3];
+
+});
+
+});
+
 });
